@@ -20,7 +20,7 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: latest
 
-envs:
+env:
   GRPC_HOST: modelmesh-serving.text-to-image
   GRPC_PORT: 8083
 
