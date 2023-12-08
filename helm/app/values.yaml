@@ -22,7 +22,7 @@ image:
 
 env:
   GRPC_HOST: modelmesh-serving.text-to-image
-  GRPC_PORT: 8083
+  GRPC_PORT: "8083"
 
 imagePullSecrets: []
 nameOverride: ""
