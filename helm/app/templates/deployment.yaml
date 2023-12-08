@@ -40,7 +40,7 @@ spec:
             - containerPort: {{ .Values.service.port }}
               protocol: TCP
           env:
-            {{- include "helpers.list-env-variables" . | indent 6 }}
+            {{- include "helpers.list-env-variables" . | indent 12 }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
